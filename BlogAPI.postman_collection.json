@@ -1,0 +1,307 @@
+{
+	"info": {
+		"_postman_id": "c6ddcc2a-c950-450d-a7de-4fcb8b771806",
+		"name": "BlogAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24557596"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "ervin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ervin.cajic@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/register",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "ervin.cajic@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/login",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Store New Post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjYwNGZkZjlmYWIxMTQzZTVhNTQ3ZDk1YTYwMTkxNjc3YjNiZWJiMTZkMTI4MTRlMWQwOTEyY2RjYzI4MDE4ZjdmYTFjZDdkOWVlYWQ3ZGEiLCJpYXQiOjE2ODkzMjk1ODkuNTE5NzgxLCJuYmYiOjE2ODkzMjk1ODkuNTE5Nzk3LCJleHAiOjE3MjA5NTE5ODkuNTE1MTA5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.Drk31A3ksO8LdwyJy9jPS-zu9ZYGxpWbUMZ2Q53_kz68qHJpHJH-DP1grT9lVJxJZEetIpI7hBdAlivPpv2kfqXUDNN7nngHKlnaNr-8gxnf-La8sB9m2xaCR-SurMxbiaUrIZASG71YOsJyWphJ9z-xFsUqt3kq7IhsRx9KgFhmMKpSOVdeKlmFA4Lm7YWbHrYH29TAjilKwZ0QAUSdG86ThiKr1Lt2ShPBg0CeGdHQeKSsoBhI9F2x55DfoSb2Cuk4in17clw8WQm75HpTL6a34QYQx0RmCezol9IE742rCNqoX01yU-8c2h5JjPmxymxVczyPkGBdU2NenMQIbtr_PpxA7o2d8RCKYTYckE_RcL2bXXqiGXA6643aZDIrjx2UCr-Qbul60g94Qov6rZ3FJU6JKwwsuXlloUGKgx7Rm5bi_WHi5wv03uGxCUfklFuT9pCj4fauHTiOtPXauaPFQdWVfhkFw-PcpNfWpYe1MBNjm7PAYttXGXakHv72fMNVJuGdex_UTIY-ejNmNFtlINMkZhsLyaP2nMDxMoFgNntk6HmOltvtn9PKXr1h5eeQtrZW-LXuVmfWRWC3cYYIk2oWZsmd9Mmj1PlT3VfzDciSIbAkjvPTJDnp09dlV7sOlzqXV03QBTUfxAMou6ObuX3ciFRiWDIU7NmsHqQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "New Post 2",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "Lorem 2 Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "C:\\Users\\ahmed\\OneDrive\\Pictures\\Nimble Screenshots\\2022-12-29--15-53-53-813.png\n",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/posts",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Post by ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTI0YTM4ZTk2MmY0ODQ1NDFhZjZiNmU2MWY5ZDgzMThkYjFhNTQyYWIyNjI0YWVjZTllYTA4NmFlNGVhMWNjZGY4YzgyNGIzYzhhYmU2YzIiLCJpYXQiOjE2ODkzNDI5NjAuNjExMzkxLCJuYmYiOjE2ODkzNDI5NjAuNjExMzkzLCJleHAiOjE3MjA5NjUzNjAuNjA2OTc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.hEcez_HMDEsxb8znzfBqL8Nnj988IzeuztYBON_CoZd0T68MYDxKRpvjrG6ifYkXkA5e2PUuTNXJjlX9sDK0RTNtEopOkDZ6UOZvErswIe0yC9olim3k3N_ZbnNH51LhIhN3XGqbPtZj82OxOe0VCRuwPNoeu6wD-D-864UuCDA3g8zScWusBOJf7pXiLvXBKM0k_gMI1IRQJw9Q2-jcOiTQYElt72uR7MHh1qy7-7dsnpZQPW5vxKglCeY2OkKRwkD7mDj2u5h3IBRvzO_rJf3xuX7UZwFvBZ4ei-wh53gF1pBJBeUzre-_QsL2NuM1itMW5KosTmi6JERu2Whd_PPHccj4THg4RnNFvt6QW_eMCKguXrJ2jb0ZmNiLlUpCl78uYC56N1LUFR5en0UArUNXrnm09YtxCRnKnl4UXpmoAT1jowNmcgH71su-ij9U48zOJdKwoj5NdFmSmZO0dimgtS4ZxGPOqMd3KS2DTFLf20iPZbP4N1Vr5Luqw-Tr9ouGyB4CI5ZButw3gl8U9USmJTaDBkWER1lX8XtCDy7F0KtVikFC6rOdnyysUYfpGLBDqLidE6yVfBG0SH5ValI1sOHYV_EeSpEqnOWFW7s2SmoHLKJsxEsM9TGbfEHMDZz0Dq4gQCOZGVD8JberMwfzytuEj733CNysCTFTvsE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/posts/3",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/logout",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sorting",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTI0YTM4ZTk2MmY0ODQ1NDFhZjZiNmU2MWY5ZDgzMThkYjFhNTQyYWIyNjI0YWVjZTllYTA4NmFlNGVhMWNjZGY4YzgyNGIzYzhhYmU2YzIiLCJpYXQiOjE2ODkzNDI5NjAuNjExMzkxLCJuYmYiOjE2ODkzNDI5NjAuNjExMzkzLCJleHAiOjE3MjA5NjUzNjAuNjA2OTc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.hEcez_HMDEsxb8znzfBqL8Nnj988IzeuztYBON_CoZd0T68MYDxKRpvjrG6ifYkXkA5e2PUuTNXJjlX9sDK0RTNtEopOkDZ6UOZvErswIe0yC9olim3k3N_ZbnNH51LhIhN3XGqbPtZj82OxOe0VCRuwPNoeu6wD-D-864UuCDA3g8zScWusBOJf7pXiLvXBKM0k_gMI1IRQJw9Q2-jcOiTQYElt72uR7MHh1qy7-7dsnpZQPW5vxKglCeY2OkKRwkD7mDj2u5h3IBRvzO_rJf3xuX7UZwFvBZ4ei-wh53gF1pBJBeUzre-_QsL2NuM1itMW5KosTmi6JERu2Whd_PPHccj4THg4RnNFvt6QW_eMCKguXrJ2jb0ZmNiLlUpCl78uYC56N1LUFR5en0UArUNXrnm09YtxCRnKnl4UXpmoAT1jowNmcgH71su-ij9U48zOJdKwoj5NdFmSmZO0dimgtS4ZxGPOqMd3KS2DTFLf20iPZbP4N1Vr5Luqw-Tr9ouGyB4CI5ZButw3gl8U9USmJTaDBkWER1lX8XtCDy7F0KtVikFC6rOdnyysUYfpGLBDqLidE6yVfBG0SH5ValI1sOHYV_EeSpEqnOWFW7s2SmoHLKJsxEsM9TGbfEHMDZz0Dq4gQCOZGVD8JberMwfzytuEj733CNysCTFTvsE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/sort?sort_by=title&sort_order=asc",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sort"
+					],
+					"query": [
+						{
+							"key": "sort_by",
+							"value": "title"
+						},
+						{
+							"key": "sort_order",
+							"value": "asc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTI0YTM4ZTk2MmY0ODQ1NDFhZjZiNmU2MWY5ZDgzMThkYjFhNTQyYWIyNjI0YWVjZTllYTA4NmFlNGVhMWNjZGY4YzgyNGIzYzhhYmU2YzIiLCJpYXQiOjE2ODkzNDI5NjAuNjExMzkxLCJuYmYiOjE2ODkzNDI5NjAuNjExMzkzLCJleHAiOjE3MjA5NjUzNjAuNjA2OTc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.hEcez_HMDEsxb8znzfBqL8Nnj988IzeuztYBON_CoZd0T68MYDxKRpvjrG6ifYkXkA5e2PUuTNXJjlX9sDK0RTNtEopOkDZ6UOZvErswIe0yC9olim3k3N_ZbnNH51LhIhN3XGqbPtZj82OxOe0VCRuwPNoeu6wD-D-864UuCDA3g8zScWusBOJf7pXiLvXBKM0k_gMI1IRQJw9Q2-jcOiTQYElt72uR7MHh1qy7-7dsnpZQPW5vxKglCeY2OkKRwkD7mDj2u5h3IBRvzO_rJf3xuX7UZwFvBZ4ei-wh53gF1pBJBeUzre-_QsL2NuM1itMW5KosTmi6JERu2Whd_PPHccj4THg4RnNFvt6QW_eMCKguXrJ2jb0ZmNiLlUpCl78uYC56N1LUFR5en0UArUNXrnm09YtxCRnKnl4UXpmoAT1jowNmcgH71su-ij9U48zOJdKwoj5NdFmSmZO0dimgtS4ZxGPOqMd3KS2DTFLf20iPZbP4N1Vr5Luqw-Tr9ouGyB4CI5ZButw3gl8U9USmJTaDBkWER1lX8XtCDy7F0KtVikFC6rOdnyysUYfpGLBDqLidE6yVfBG0SH5ValI1sOHYV_EeSpEqnOWFW7s2SmoHLKJsxEsM9TGbfEHMDZz0Dq4gQCOZGVD8JberMwfzytuEj733CNysCTFTvsE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "search",
+							"value": "Laravel",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/search?search=New post",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "New post"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
